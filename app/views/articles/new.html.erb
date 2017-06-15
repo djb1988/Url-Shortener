@@ -1,0 +1,12 @@
+<%= form_for :article, url: articles_path do |f| %>
+  <h1> Type your Long Url </h1>
+ 
+  <p>
+    
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Get short Url" %>
+  </p>
+<% end %>
